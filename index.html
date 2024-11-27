@@ -1,32 +1,324 @@
 <!-- Unit 5 Project
 Requirements
-[  ] <div> and <span>
-[  ] height: and width:
-[  ] margin: and padding: 
-[  ] Three Images
+[ yes ] <div> and <span>
+[ yes ] height: and width:
+[ yes ] margin: and padding: 
+[ yes ] Three Images
 
 Select ONE Additional Feature to Add  
 [ no ] Feature 1 - Flexbox
-[ no ] Feature 2 - Flip Card
+[ yes ] Feature 2 - Flip Card
 [ no ] Feature 3 - Navbar
 [ no ] Feature 4 - Shaking Animation
 [ no ] Feature 5 - Gradient Background
-[ no ] Feature 6 - Spotify Playlist
+[ yes ] Feature 6 - Spotify Playlist
 -->
 
 <!DOCTYPE html>
 <html>
+  <head>
+    <title>Winter Holidays (Before New Years)</title>
+    <meta charset="utf-8" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Danfo&family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&family=Schoolbell&family=Shadows+Into+Light&family=Spicy+Rice&family=Teko:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        background-image: url(https://i.pinimg.com/originals/ae/27/fd/ae27fdbccce810c034a1d3f581a86c0b.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        font-family: "Spicy Rice", serif;
+        font-weight: 400;
+        font-style: normal;
+      }
 
-<head>
-  <title>Unit 5 Project</title>
-  <meta charset="utf-8">
-  <style>
+      .widthmargin {
+        width: 55%;
+        margin: auto;
+      }
+      h1 {
+        padding: 5px;
+        background-color: white;
+      }
+      .flip-card {
+        background-color: transparent;
+        width: 90px;
+        height: 120px;
+      }
 
-  </style>
-</head>
-<body>
+      .flip-card-inner {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        transition: transform 0.6s;
+        transform-style: preserve-3d;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+      }
 
- 
+      .flip-card:hover .flip-card-inner {
+        transform: rotateY(180deg);
+      }
 
-</body>
+      .flip-card-front,
+      .flip-card-back {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+      }
+
+      .flip-card-front {
+        background-color: #bbb;
+        color: black;
+      }
+
+      .flip-card-back {
+        background-color: green;
+        color: white;
+        transform: rotateY(180deg);
+      }
+      .wintery {
+        display: flex;
+        justify-content: space-around;
+        margin-bottom: 30px;
+      }
+
+      .letsgobro {
+        background-color: white;
+      }
+      .vunderfall {
+        color: green;
+      }
+      .yeahbruh {
+        background-color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <center>
+      <h1>Happy Holidays!</h1>
+      <img
+        src="https://www.bluecallapp.com/en/wp-content/uploads/sites/2/2021/01/adult-background-beard-716658-scaled.jpg"
+        width="250"
+      />
+
+      <div class="letsgobro">
+        <p class="widthmargin">
+          It's the most <span class="vunderfall">wonderful</span> time of the
+          year! The hustling and bustling of the city streets along with the
+          beautiful Holiday lights gives a sense of community and warmth during
+          this cold season.<br />
+          Cosy up with hot chocolate and Christmas movies on Netflix, spend time
+          with people you love.
+        </p>
+
+        <p class="widthmargin">
+          Here are some activities you can do during the Holidays to make your
+          spirits bright!
+        </p>
+      </div>
+      <div>
+        <p>
+          <span class="yeahbruh"> ⋆⁺₊❅. Go sledding ⋆⁺₊❅.</span> <br />
+          <span class="yeahbruh"> ⋆⁺₊❅. Ice Skate ⋆⁺₊❅. </span> <br />
+          <span class="yeahbruh">
+            ⋆⁺₊❅. Decorate these things below: ⋆⁺₊❅.
+          </span>
+        </p>
+        <table>
+          <thead>
+            <tr>
+              <th class="yeahbruh">☃︎ Cookies ☃︎</th>
+              <th class="yeahbruh">☃︎ Trees ☃︎</th>
+              <th class="yeahbruh">☃︎ Cards ☃︎࣪</th>
+              <th class="yeahbruh">☃︎ House ☃︎</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                <img
+                  src="https://sugarspunrun.com/wp-content/uploads/2021/11/Easy-Sugar-Cookies-Recipe-3-of-6.jpg"
+                  width="200"
+                />
+              </td>
+              <td>
+                <img
+                  src="https://blog.christmasdesigners.com/wp-content/uploads/2020/11/christmas-tree-decoration-ideas-.jpeg"
+                  width="200"
+                />
+              </td>
+              <td>
+                <img
+                  src="https://hips.hearstapps.com/hmg-prod/images/christmas-card-ideas-pom-pom-christmas-card-1635474688.jpeg"
+                  width="200"
+                />
+              </td>
+              <td>
+                <img
+                  src="https://assets.dnainfo.com/generated/photo/2013/12/lynch-family-house-1-1386960986523.JPG/extralarge.jpg"
+                  width="200"
+                />
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <p>
+          <span class="yeahbruh">
+            ⋆⁺₊❅. Explore a pop-up Winter Village (Below is the one at Bryant
+            Park) ⋆⁺₊❅. </span
+          ><br />
+          <img
+            src="https://saratogaoliveoil.com/cdn/shop/articles/BryantPark-300x250-1.jpg?v=1663185909"
+            width="300"
+          /><br />
+          <span class="yeahbruh"> ⋆⁺₊❅. Spend time with friends ⋆⁺₊❅.</span>
+          <br />
+          <img
+            src="https://www.baby-chick.com/wp-content/uploads/2018/12/Family-Together-Christmas-Celebration-Concept-623207678_2122x1416.jpeg"
+            width="300"
+          />
+          <br />
+          <span class="yeahbruh">
+            ⋆⁺₊❅. Drink and eat Holiday foods ⋆⁺₊❅.
+          </span>
+          <br />
+          <img
+            src="https://pizzazzerie.com/wp-content/uploads/2021/12/hot-cocoa-board01.jpg"
+            width="300"
+          />
+          <br />
+          <span class="yeahbruh">
+            ⋆⁺₊❅. Watch Holiday movies. Here are some of my favorites: ⋆⁺₊❅.
+          </span>
+        </p>
+      </div>
+      <div class="wintery">
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <img
+                src="https://arhsharbinger.com/wp-content/uploads/2021/12/home-alone-675x900.jpg"
+                width="90"
+              />
+            </div>
+            <div class="flip-card-back">
+              <p>Home Alone</p>
+            </div>
+          </div>
+        </div>
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <img
+                src="https://musicart.xboxlive.com/7/8c545100-0000-0000-0000-000000000002/504/image.jpg?w=1920&h=1080"
+                width="90"
+              />
+            </div>
+            <div class="flip-card-back">
+              <p>A Christmas Story</p>
+            </div>
+          </div>
+        </div>
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <img
+                src="https://images.ctfassets.net/micoswd5fgp1/3HUY0U4icc0v2Qz6Jhvzfg/69b0b689e5c549cdc12749a96cb18d9a/Elf.jpg"
+                width="90"
+              />
+            </div>
+            <div class="flip-card-back">
+              <p>Elf</p>
+            </div>
+          </div>
+        </div>
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <img
+                src="https://media-cache.cinematerial.com/p/500x/dkfgfeo6/the-polar-express-british-dvd-movie-cover.jpg?v=1456180902"
+                width="90"
+              />
+            </div>
+            <div class="flip-card-back">
+              <p>The Polar Express</p>
+            </div>
+          </div>
+        </div>
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <img
+                src="https://m.media-amazon.com/images/M/MV5BMjViMWMxNWItYTk2OC00MWQwLWIyMzktNDQ4YWIyYjcxZGIyXkEyXkFqcGc@._V1_.jpg"
+                width="90"
+              />
+            </div>
+            <div class="flip-card-back">
+              <p>A Charlie Brown Christmas</p>
+            </div>
+          </div>
+        </div>
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <img
+                src="https://cdn.kobo.com/book-images/22c45fb0-5a18-407b-afdf-35965f7618cc/353/569/90/False/a-christmas-carol-illustrated-edition-2.jpg"
+                width="90"
+              />
+            </div>
+            <div class="flip-card-back">
+              <p>A Christmas Carol</p>
+            </div>
+          </div>
+        </div>
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <img
+                src="https://musicart.xboxlive.com/7/827d0b00-0000-0000-0000-000000000002/504/image.jpg?w=1920&h=1080"
+                width="90"
+              />
+            </div>
+            <div class="flip-card-back">
+              <p>Unaccompanied Minors</p>
+            </div>
+          </div>
+        </div>
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <img
+                src="https://cdn11.bigcommerce.com/s-yzgoj/images/stencil/1280x1280/products/2913993/5954747/MOVAH8473__62379.1679598900.jpg?c=2"
+                width="100"
+              />
+            </div>
+            <div class="flip-card-back">
+              <p>The Grinch</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <span class="yeahbruh">
+        ⋆⁺₊❅. Listen and or sing to Holiday Music⋆⁺₊❅.
+      </span>
+      <br />
+      <iframe
+        style="border-radius: 12px"
+        src="https://open.spotify.com/embed/playlist/0LArDeJXrMBPHZkxdL7MPU?utm_source=generator"
+        width="100%"
+        height="352"
+        frameborder="0"
+        allowfullscreen=""
+        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+        loading="lazy"
+      ></iframe>
+    </center>
+  </body>
 </html>
